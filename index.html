@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="This is only for learning web development" />
+	<meta name="keywords" content="html5, css3, javascript, jquery, angular, angularjs, bootstrap, php" />
+	<meta name="author" content="Boris Boskovic" />
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/lbshtml5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+	<title>Zmijica by Boris B.</title>
+</head>
+
+<body>
+	<!-- Leaderboards -->
+	<div id="leaderboards" title="This is local storage, which means it only saves results played on your computer."></div>
+
+	<!-- Game and score (and instructions bellow)-->
+	<div id="game">
+		<div id="container">
+			<div id="game_over">Game Over</div>
+		</div>
+		<div id="sidebox">
+			Score:
+			<div id="score"></div>
+			<br />
+			Speed:
+			<div id="speed"></div>
+			<br />
+			Time:
+			<div id="timer"></div>
+			<br />
+			<div id="pause">
+				Pause
+				<i class="fa fa-coffee fa-3x" aria-hidden="true"></i>
+			</div>
+		</div>
+
+		<!-- Instructions -->
+		<div id="instructions">
+			Use arrow keys to control snake 
+			<i class="fa fa-arrow-left" aria-hidden="true"></i>
+			<i class="fa fa-arrow-up" aria-hidden="true"></i>
+			<i class="fa fa-arrow-right" aria-hidden="true"></i>
+			<i class="fa fa-arrow-down" aria-hidden="true"></i>
+			Use SPACE to pause game
+		</div>
+	</div>
+	
+	<div id="author">
+		<img src="assets/img/author.jpg" alt="Author-photo" title="author">
+		<span>Author name:</span>
+		Boris Bošković
+	</div>
+
+	<footer>
+		<div>Designed By: Boris Bošković</div>
+		<div><a href="mailto: boris.boskovic92@gmail.com">email: boris.boskovic92@gmail.com</a></div>
+		<div>April, 2017</div>
+	</footer>
+
+	<script src="assets/js/leaderboards.js" type="text/javascript"></script>
+	<script src="assets/js/snake.js" type="text/javascript"></script>
+	<script src="assets/js/timing.js" type="text/javascript"></script>
+	<script src="node_modules/sweetalert2/dist/sweetalert2.min.js" type="text/javascript"></script>
+</body>
+</html>
